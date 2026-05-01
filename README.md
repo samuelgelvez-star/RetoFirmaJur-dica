@@ -130,6 +130,6 @@ Se eligió `VARCHAR(255)` como tipo seguro y flexible para campos de texto cuya 
 
 ## Modelo lógico relacional
 
-![Modelo relacional drawSQL](./modelo_logico/drawSQL-image-export-2026-05-01%20(2).jpg)
+![Modelo relacional drawSQL](./modelo_logico/drawSQL-image-export-2026-05-01%20(3).jpg)
 
 ---
