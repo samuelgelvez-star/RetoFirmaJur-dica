@@ -9,9 +9,9 @@ Base de datos relacional para la gestión de asuntos legales, clientes y procura
 
 ```
 /diagramas
-  └── DER_firma_juridica.png          ← Diagrama Entidad-Relación (drawio)
+  └── image.png          ← Diagrama Entidad-Relación (drawio)
 /modelo_logico
-  └── drawSQL-image-export-2026-05-01.jpg  ← Modelo lógico relacional (drawSQL)
+  └── drawSQL-image-export-2026-05-01%20(2).jpg  ← Modelo lógico relacional (drawSQL)
 README.md
 ```
 
@@ -69,7 +69,7 @@ El reto principal del diseño está en que **un asunto puede requerir varios pro
 
 ## 3. Justificación de relaciones y cardinalidades
 
-Las relaciones fueron identificadas a partir del análisis del enunciado y se representan en el Diagrama Entidad-Relación con notación de Chen (ver `/diagramas/DER_firma_juridica.png`).
+Las relaciones fueron identificadas a partir del análisis del enunciado y se representan en el Diagrama Entidad-Relación con notación de Chen (ver `/diagramas/image.png`).
 
 ### Relación CLIENTES — ASUNTOS LEGALES: **1 a M**
 
@@ -109,7 +109,7 @@ La relación entre `CLIENTES` y `ASUNTOS LEGALES` se implementa añadiendo el `D
 **Regla 3 — La relación N:M se resuelve con una tabla intermedia.**
 La relación entre `ASUNTOS LEGALES` y `PROCURADOR` genera la tabla `ASUNTO_PROCURADOR`, que contiene las claves foráneas de ambas tablas. Esta tabla representa cada asignación de un procurador a un asunto.
 
-El modelo lógico resultante puede verse en `/diagramas/drawSQL-image-export-2026-05-01.jpg`.
+El modelo lógico resultante puede verse en `/modelo_logico/drawSQL-image-export-2026-05-01%20(2).jpg`.
 
 ---
 
@@ -126,10 +126,10 @@ Se eligió `VARCHAR(255)` como tipo seguro y flexible para campos de texto cuya 
 
 ## Diagrama conceptual (DER — Notación Chen)
 
-![Diagrama Entidad-Relación](./diagramas/DER_firma_juridica.png)
+![Diagrama Entidad-Relación](./diagramas/image.png)
 
 ## Modelo lógico relacional
 
-![Modelo relacional drawSQL](./diagramas/drawSQL-image-export-2026-05-01.jpg)
+![Modelo relacional drawSQL](./modelo_logico/drawSQL-image-export-2026-05-01%20(2).jpg)
 
 ---
